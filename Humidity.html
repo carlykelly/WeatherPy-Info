@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Latitude Homepage</title>
+    <title>Humidity vs Latitude</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -21,12 +21,11 @@
 
 <body>
     <nav class="nonburger navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand mr-auto" href="#">
+        <a class="navbar-brand mr-auto" href="index.html">
             <h1><svg class="bi bi-house-door-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
                 <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-              </svg> Latitude</h1>
-        </a>
+              </svg> Latitude</h1></a>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,13 +37,14 @@
                 <a class="dropdown-item" href="Humidity.html">Humidity</a>
                 <a class="dropdown-item" href="Windspeed.html">Wind Speed</a>
             </div>
+
         </div>
         <a class="navbar-links" href="Comparison.html">Comparison</a>
         <a class="navbar-links" href="Data.html">Data</a>
     </nav>
-    <!-- Trying Hamburger -->
+<!-- Trying Hamburger -->
 <nav class="hamburger navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="WebDesignChallenge.html">Latitude</a>
+    <a class="navbar-brand" href="index.html">Latitude</a>
     
 <button class="hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -74,24 +74,21 @@
     <div class='container'>
         <div class='row'>
             <div class='col-md-7 col-12'>
-                <div class = "white">
-                <h1 class="page-header">Summary: Latitude vs X </h1>
+            <div class = "white">
+                <h1 class="page-header">Humidity</h1>
                 <hr>
                 <section class="figure">
-                    <img class="graph-left" src="Lat_vs_Temp.png" alt="Scatter Plot of Latitude vs Max Temp" height=70%
-                        width=70%>
-                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
-                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble
-                        a dataset on over 500 cities.
-                    </p>
-                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
-                        latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This
-                        site provides the source data and visualizations created as part of the analysis, as well as
-                        explanations and descriptions of any trends and correlations witnessed.
+                    <img src="Lat_vs_Humidity.png" alt="Scatter Plot of Latitude vs Humidity" height=70% width=70%>
+                    <p>Against our hypothesis it appeared there was little correlation between latitude and humidity. We
+                        believed
+                        humidity may be higher closer to the equator (0 degrees latitude). However, it appears there is
+                        little
+                        correlation. A better predictor of humidity would be proximity to the coast line.
                     </p>
                 </section>
+                </div>
             </div>
-            </div>
+
             <div class='col-md-1'><br></div>
             <div class='col-md-4 col-12'>
                 <div class = "white">
@@ -99,16 +96,16 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-6 col-sm-3 col-3">
-                        <a href="Temp-Page.html"><img class = "viz" src="Lat_vs_Temp.png"></a>
+                        <a href="Temp-Page.html"><img class="viz" src="Lat_vs_Temp.png"></a>
                     </div>
                     <div class="col-md-6 col-sm-3 col-3">
-                        <a href="Cloudiness.html"><img class = "viz" src="Lat_vs_Cloudiness.png"></a>
+                        <a href="Cloudiness.html"><img class="viz" src="Lat_vs_Cloudiness.png"></a>
                     </div>
                     <div class="col-md-6 col-sm-3 col-3">
-                        <a href="Humidity.html"><img class = "viz" src="Lat_vs_Humidity.png"></a>
+                        <a href="Humidity.html"><img class="viz border" src="Lat_vs_Humidity.png"></a>
                     </div>
                     <div class="col-md-6 col-sm-3 col-3">
-                        <a href="Windspeed.html"><img class = "viz" src="Lat_vs_Wind_Speed.png"></a>
+                        <a href="Windspeed.html"><img class="viz" src="Lat_vs_Wind_Speed.png"></a>
                     </div>
                     </div>
                 </div>

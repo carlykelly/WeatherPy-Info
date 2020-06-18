@@ -1,0 +1,156 @@
+body{
+    background-color: #E8E8E8;
+    font-family: "Montserrat","Segoe UI","Helvetica Neue", Arial, sans-serif;
+}
+.navbar {
+    background-color: white}
+.navbar-brand{
+    background-color:#17a2b8;
+}
+
+.navbar-brand h1{
+    color:white;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+#dropdownMenuButton{
+    background-color:white;
+    color: #6c757d;
+    border-color:white;
+    float:right;
+
+}
+
+.navbar-links{
+    color:  #6c757d;
+    margin-left: 15px;
+    float: right;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.bi {
+    vertical-align: bottom;
+}
+
+.white{
+    background-color: white;
+    padding: 32px;
+}
+
+.viz{
+    width: 100%;
+
+}
+
+.border{
+    border: 3px solid #17a2b8 !important;
+}
+
+.page-header{
+    color: #17a2b8;
+    font-size: 28px;
+    margin-top: 20px;
+    background-color:white;
+}
+
+.graph-left{
+    float:left;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+.picture-link{
+    margin-left: 20px;
+    margin-bottom:20px;
+}
+
+.pic-header{
+    color: #17a2b8;
+    font-size: 20px;
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    /* border-collapse: collapse; */
+    margin: 20px;
+    border:none;
+  }
+
+  
+  th {
+      text-align:left;
+      padding:8px;
+      border-bottom: solid lightgray 3px;
+      border-top:none;
+      border-left:none;
+      border-right:none
+  }
+
+  td {
+    border-bottom:solid lightgray 2px;
+    text-align: left;
+    border-left:none;
+    border-right:none;
+    border-top: none;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f1eeee;
+  }
+
+  .glyphicon{
+      color:black;
+  }
+
+  .hamburger{
+      display:none;
+  }
+
+  @media (max-width: 768px) {
+      .hamburger{
+          display: flex;
+      }
+      .navbar{
+          background-color: #17a2b8 !important;
+          padding:0px;
+      } 
+      .navbar-brand{
+          color:white !important;
+          background-color: #17a2b8;
+          font-weight: bold;
+          font-family: "Montserrat","Segoe UI","Helvetica Neue", Arial, sans-serif;
+          padding:20px
+      }
+
+      .navhead{
+          background-color:#17a2b8 !important;
+      }
+
+      .dropdown-menu{
+          background-color: white;
+          border:none;
+      }
+      .navbar-collapse{
+          background-color: white;
+      }
+
+      .navbar-light, .navbar-toggler{
+          border-color:white !important;
+      }
+
+      .nonburger{
+          display: none;
+      }
+  }
+  
+
